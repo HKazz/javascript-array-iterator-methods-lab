@@ -105,7 +105,18 @@ inventorNames = inventors.map((element) => {
 console.log(inventorNames)
 
 // exercise 3
+let sortedByBirthYear = []
+sortedByBirthYear = inventors.sort((a,b) => {
+  if(a.inventors < b.inventors){
+    return -1
+  }
+  if(a.inventors > b.inventors){
+    return 1
+  }
+  return 0
+})
 
+console.log(sortedByBirthYear)
 
 // exercise 4
 let inventroNamedAda = []
